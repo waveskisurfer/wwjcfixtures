@@ -1,0 +1,63 @@
+[{
+  "name" : "Cricket Club",
+  "juniorCoordinator" : "Junior Coordinator",
+  "emailAddress" : "jc@cricketclub.com",
+  "entries": {
+    "under9" : {
+      "leagues": {
+        "A": {
+          "numberOfTeams" : 0,
+          "usualMatchDay" : "Sunday"
+        },
+        "B": {
+          "numberOfTeams" : 1,
+          "usualMatchDay" : "Sunday"
+        }
+      }
+    },
+    "under11" : {
+      "leagues": {
+        "A": {
+          "numberOfTeams" : 0,
+          "usualMatchDay" : "Sunday"
+        },
+        "B": {
+          "numberOfTeams" : 1,
+          "usualMatchDay" : "Sunday"
+        }
+      }
+    },
+    "under13" : {
+      "leagues": {
+        "A": {
+          "numberOfTeams" : 0,
+          "usualMatchDay" : "Sunday"
+        },
+        "B": {
+          "numberOfTeams" : 1,
+          "usualMatchDay" : "Sunday"
+        }
+      }
+    },
+    "under15" : {
+      "leagues": {
+        "A": {
+          "numberOfTeams" : 0,
+          "usualMatchDay" : "Friday"
+        },
+        "B": {
+          "numberOfTeams" : 1,
+          "usualMatchDay" : "Friday"
+        }
+      }
+    },
+    "under17" : {
+      "leagues": {
+        "A": {
+          "numberOfTeams" : 0,
+          "usualMatchDay" : "Sunday"
+        }
+      }
+    }
+  }
+}]
