@@ -1,4 +1,9 @@
-
+/**
+ * Checks to make sure that the league name is a valid league for the district
+ * @param {string} leagueName the leagueName being checked. The league name consists of an age category and a division,
+ * e.g. U9A or U13B2
+ * @returns {{}} an object containing the agegroup and the division for this particular league.
+ */
 module.exports = function(leagueName) {
 
   var league = {};
