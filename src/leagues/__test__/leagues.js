@@ -2,7 +2,7 @@
  * Created by graeme on 15/10/2016.
  */
 var expect = require('expect.js');
-var league = require('../league');
+var league = require('../leagues');
 
 describe('Setting up the leagues', function () {
 
