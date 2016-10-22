@@ -2,11 +2,24 @@
  * Created by graeme on 15/10/2016.
  */
 var expect = require('expect.js');
-var league = require('../leagues');
+var league;
 
 describe('Setting up the leagues', function () {
 
+  beforeEach(function() {
+    // load a fresh version of entries
+    league = require('../leagues');
+  });
+
+  afterEach(function() {
+    // unload the entries module
+    delete require.cache[require.resolve('../leagues')];
+  });
+
+
   it ('should return an empty list of teams in the team list for a league', function() {
+
+    //league.printLeagues();
 
     var teams = league.getTeamList('U15A');
     expect(teams).to.be.empty();
@@ -24,13 +37,16 @@ describe('Setting up the leagues', function () {
     league.addTeamToLeague('U11A', 'The Team1');
     league.addTeamToLeague('U11B1', 'The Team1');
     league.addTeamToLeague('U11B2', 'The Team1');
+    league.addTeamToLeague('U11G', 'The Team1');
     league.addTeamToLeague('U13A', 'The Team1');
     league.addTeamToLeague('U13B1', 'The Team1');
     league.addTeamToLeague('U13B2', 'The Team1');
+    league.addTeamToLeague('U13G', 'The Team1');
     league.addTeamToLeague('U15A', 'The Team1');
     league.addTeamToLeague('U15B1', 'The Team1');
     league.addTeamToLeague('U15B2', 'The Team1');
-    league.addTeamToLeague('U17A', 'The Team1');
+    league.addTeamToLeague('U15G', 'The Team1');
+    league.addTeamToLeague('U17', 'The Team1');
 
     var teams = league.getTeamList('U9A');
     expect(teams).to.contain('The Team1');
@@ -42,11 +58,15 @@ describe('Setting up the leagues', function () {
     expect(teams).to.contain('The Team1');
     teams = league.getTeamList('U11B2');
     expect(teams).to.contain('The Team1');
+    teams = league.getTeamList('U11G');
+    expect(teams).to.contain('The Team1');
     teams = league.getTeamList('U13A');
     expect(teams).to.contain('The Team1');
     teams = league.getTeamList('U13B1');
     expect(teams).to.contain('The Team1');
     teams = league.getTeamList('U13B2');
+    expect(teams).to.contain('The Team1');
+    teams = league.getTeamList('U13G');
     expect(teams).to.contain('The Team1');
     teams = league.getTeamList('U15A');
     expect(teams).to.contain('The Team1');
@@ -54,25 +74,46 @@ describe('Setting up the leagues', function () {
     expect(teams).to.contain('The Team1');
     teams = league.getTeamList('U15B2');
     expect(teams).to.contain('The Team1');
-    teams = league.getTeamList('U17A');
+    teams = league.getTeamList('U15G');
+    expect(teams).to.contain('The Team1');
+    teams = league.getTeamList('U17');
     expect(teams).to.contain('The Team1');
 
   });
 
   it ('should add the teams to the leagues', function() {
 
+    league.addTeamToLeague('U9A', 'The Team1');
+    league.addTeamToLeague('U9B', 'The Team1');
+    league.addTeamToLeague('U11A', 'The Team1');
+    league.addTeamToLeague('U11B1', 'The Team1');
+    league.addTeamToLeague('U11B2', 'The Team1');
+    league.addTeamToLeague('U11G', 'The Team1');
+    league.addTeamToLeague('U13A', 'The Team1');
+    league.addTeamToLeague('U13B1', 'The Team1');
+    league.addTeamToLeague('U13B2', 'The Team1');
+    league.addTeamToLeague('U13G', 'The Team1');
+    league.addTeamToLeague('U15A', 'The Team1');
+    league.addTeamToLeague('U15B1', 'The Team1');
+    league.addTeamToLeague('U15B2', 'The Team1');
+    league.addTeamToLeague('U15G', 'The Team1');
+    league.addTeamToLeague('U17', 'The Team1');
+
     league.addTeamToLeague('U9A', 'The Team1', 'B');
     league.addTeamToLeague('U9B', 'The Team2');
     league.addTeamToLeague('U11A', 'The Team2');
     league.addTeamToLeague('U11B1', 'The Team2', 'B');
     league.addTeamToLeague('U11B2', 'The Team2');
+    league.addTeamToLeague('U11G', 'The Team2');
     league.addTeamToLeague('U13A', 'The Team2');
     league.addTeamToLeague('U13B1', 'The Team2');
     league.addTeamToLeague('U13B2', 'The Team2');
+    league.addTeamToLeague('U13G', 'The Team2');
     league.addTeamToLeague('U15A', 'The Team2');
     league.addTeamToLeague('U15B1', 'The Team2');
     league.addTeamToLeague('U15B2', 'The Team2');
-    league.addTeamToLeague('U17A', 'The Team2');
+    league.addTeamToLeague('U15G', 'The Team2');
+    league.addTeamToLeague('U17', 'The Team2');
 
     var teams = league.getTeamList('U9A');
     expect(teams.length).to.be(2);
@@ -104,6 +145,12 @@ describe('Setting up the leagues', function () {
     expect(teams).to.contain('The Team1');
     expect(teams).to.contain('The Team2');
 
+    teams = league.getTeamList('U11G');
+    expect(teams.length).to.be(2);
+    expect(teams).to.be.an('array');
+    expect(teams).to.contain('The Team1');
+    expect(teams).to.contain('The Team2');
+
     teams = league.getTeamList('U13A');
     expect(teams.length).to.be(2);
     expect(teams).to.be.an('array');
@@ -117,6 +164,12 @@ describe('Setting up the leagues', function () {
     expect(teams).to.contain('The Team2');
 
     teams = league.getTeamList('U13B2');
+    expect(teams.length).to.be(2);
+    expect(teams).to.be.an('array');
+    expect(teams).to.contain('The Team1');
+    expect(teams).to.contain('The Team2');
+
+    teams = league.getTeamList('U13G');
     expect(teams.length).to.be(2);
     expect(teams).to.be.an('array');
     expect(teams).to.contain('The Team1');
@@ -140,7 +193,13 @@ describe('Setting up the leagues', function () {
     expect(teams).to.contain('The Team1');
     expect(teams).to.contain('The Team2');
 
-    teams = league.getTeamList('U17A');
+    teams = league.getTeamList('U15G');
+    expect(teams.length).to.be(2);
+    expect(teams).to.be.an('array');
+    expect(teams).to.contain('The Team1');
+    expect(teams).to.contain('The Team2');
+
+    teams = league.getTeamList('U17');
     expect(teams.length).to.be(2);
     expect(teams).to.be.an('array');
     expect(teams).to.contain('The Team1');

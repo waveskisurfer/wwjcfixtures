@@ -1,63 +1,1136 @@
-[{
-  "name" : "Cricket Club",
-  "juniorCoordinator" : "Junior Coordinator",
-  "emailAddress" : "jc@cricketclub.com",
-  "entries": {
-    "under9" : {
-      "leagues": {
+[
+  {
+    "club": "Bishops Waltham",
+    "juniorCoordinator": "Andrew Bullard",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
         "A": {
-          "numberOfTeams" : 0,
-          "usualMatchDay" : "Sunday"
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
         },
         "B": {
-          "numberOfTeams" : 1,
-          "usualMatchDay" : "Sunday"
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
         }
-      }
-    },
-    "under11" : {
-      "leagues": {
+      },
+      "U11": {
         "A": {
-          "numberOfTeams" : 0,
-          "usualMatchDay" : "Sunday"
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
         },
         "B": {
-          "numberOfTeams" : 1,
-          "usualMatchDay" : "Sunday"
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
         }
-      }
-    },
-    "under13" : {
-      "leagues": {
+      },
+      "U13": {
         "A": {
-          "numberOfTeams" : 0,
-          "usualMatchDay" : "Sunday"
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
         },
         "B": {
-          "numberOfTeams" : 1,
-          "usualMatchDay" : "Sunday"
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
         }
-      }
-    },
-    "under15" : {
-      "leagues": {
+      },
+      "U15": {
         "A": {
-          "numberOfTeams" : 0,
-          "usualMatchDay" : "Friday"
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
         },
         "B": {
-          "numberOfTeams" : 1,
-          "usualMatchDay" : "Friday"
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
         }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
       }
-    },
-    "under17" : {
-      "leagues": {
+    }
+  },
+  {
+    "club": "Trojans",
+    "juniorCoordinator": "Gary Wright",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
         "A": {
-          "numberOfTeams" : 0,
-          "usualMatchDay" : "Sunday"
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
         }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Thursday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Hedge End",
+    "juniorCoordinator": "Ian Crowley",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Otterbourne",
+    "juniorCoordinator": "Steve Biddlecombe",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Wherwell",
+    "juniorCoordinator": "Lucy Williams",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Monday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Twyford",
+    "juniorCoordinator": "John Darlington",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Fair Oak",
+    "juniorCoordinator": "Steve Wood",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Monday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Monday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Monday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Wednesday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 1,
+        "usualMatchDay": "TBD"
+      }
+    }
+  },
+  {
+    "club": "St Cross",
+    "juniorCoordinator": "Dean Osman",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 2,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 3,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 2,
+          "usualMatchDay": "Monday"
+        },
+        "B": {
+          "numberOfTeams": 2,
+          "usualMatchDay": "Monday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Wednesday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Compton & CF",
+    "juniorCoordinator": "Bill Brown",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Tuesday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Tuesday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "IBM Hursley",
+    "juniorCoordinator": "Shirley Robbins",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Andover",
+    "juniorCoordinator": "Marcus Lee",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Wednesday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 2,
+          "usualMatchDay": "Wednesday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Wednesday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 1,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Hursley Park",
+    "juniorCoordinator": "Sarah Flynn",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Wednesday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Monday"
+        },
+        "G": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Wednesday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Amport",
+    "juniorCoordinator": "Darren Goacher",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Tichborne Park",
+    "juniorCoordinator": "Pete Spain",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Ropley",
+    "juniorCoordinator": "Phil Austin",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Sparsholt",
+    "juniorCoordinator": "Jim Ley",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Monday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Monday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 1,
+        "usualMatchDay": "TBC"
+      }
+    }
+  },
+  {
+    "club": "Easton & MW",
+    "juniorCoordinator": "Adrian Lee",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
+      }
+    }
+  },
+  {
+    "club": "Longparish",
+    "juniorCoordinator": "Justin Jackman",
+    "emailAddress": "jc@cricketclub.com",
+    "entries": {
+      "U9": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U11": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U13": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Sunday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Sunday"
+        }
+      },
+      "U15": {
+        "A": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        },
+        "B": {
+          "numberOfTeams": 1,
+          "usualMatchDay": "Friday"
+        },
+        "G": {
+          "numberOfTeams": 0,
+          "usualMatchDay": "Friday"
+        }
+      },
+      "U17": {
+        "numberOfTeams": 0,
+        "usualMatchDay": "Sunday"
       }
     }
   }
-}]
+]
