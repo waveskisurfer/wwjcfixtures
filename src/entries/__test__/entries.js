@@ -288,10 +288,11 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(1);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U9A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('');
+      expect(ageGroupList[0].team).to.be('U9');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
 
     });
 
@@ -307,10 +308,11 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(1);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U9B');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('');
+      expect(ageGroupList[0].team).to.be('U9');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
 
     });
 
@@ -326,10 +328,11 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(1);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('');
+      expect(ageGroupList[0].team).to.be('U11');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
 
     });
 
@@ -346,10 +349,11 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(1);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('');
+      expect(ageGroupList[0].team).to.be('U11');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
 
     });
 
@@ -362,10 +366,11 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(1);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U17');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('');
+      expect(ageGroupList[0].team).to.be('U17');
+      expect(ageGroupList[0].matchday).to.be('Friday');
 
     });
 
@@ -380,10 +385,11 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(1);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11G');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('');
+      expect(ageGroupList[0].team).to.be('U11');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
 
     });
 
@@ -403,15 +409,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U9A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U9A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U9A');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U9B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -427,15 +435,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U9B');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U9A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U9B');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U9B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -451,15 +461,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11A');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -476,15 +488,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B2');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -502,15 +516,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -523,15 +539,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U17');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U17A');
+      expect(ageGroupList[0].matchday).to.be('Friday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U17');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U17B');
+      expect(ageGroupList[1].matchday).to.be('Friday');
 
     });
 
@@ -546,15 +564,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11G');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11G');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -574,15 +594,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U9A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U9A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U9B');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U9B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -599,15 +621,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B1');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -624,15 +648,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U13A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U13A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U13B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U13B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -649,15 +675,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U15A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U15A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U15B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U15B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -677,20 +705,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U9A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U9A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U9A');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U9B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U9B');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U9C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
 
     });
 
@@ -707,20 +738,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11A');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U11B1');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U11C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
 
     });
 
@@ -737,20 +771,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U13A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U13A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U13A');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U13B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U13B1');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U13C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
 
     });
 
@@ -767,20 +804,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U15A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U15A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U15A');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U15B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U15B1');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U15C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
 
     });
 
@@ -800,20 +840,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U9A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U9A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U9B');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U9B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U9B');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U9C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
 
     });
 
@@ -830,20 +873,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U11B2');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U11C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
 
     });
 
@@ -860,20 +906,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U13A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U13A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U13B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U13B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U13B2');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U13C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
 
     });
 
@@ -890,20 +939,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U15A');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U15A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U15B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U15B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U15B2');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U15C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
 
     });
 
@@ -924,10 +976,11 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(1);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('');
+      expect(ageGroupList[0].team).to.be('U11');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
 
     });
 
@@ -945,15 +998,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
     });
 
@@ -971,20 +1026,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U11B1');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U11C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
 
     });
 
@@ -1002,25 +1060,29 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(4);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U11B1');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U11C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
       expect(ageGroupList[3]).to.be.an('object');
-      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[3].league).to.be('U11B2');
       expect(ageGroupList[3].club).to.be('club1');
-      expect(ageGroupList[3].team).to.be('D');
+      expect(ageGroupList[3].team).to.be('U11D');
+      expect(ageGroupList[3].matchday).to.be('Sunday');
 
     });
 
@@ -1039,15 +1101,17 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(2);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
 
 
     });
@@ -1067,20 +1131,23 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(3);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U11B3');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U11C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
     });
 
     it('should return 2 teams in U11B1, 1 team in U11B2 and 1 team in U11B3', function() {
@@ -1098,25 +1165,29 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(4);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U11B3');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U11C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
       expect(ageGroupList[3]).to.be.an('object');
-      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[3].league).to.be('U11B1');
       expect(ageGroupList[3].club).to.be('club1');
-      expect(ageGroupList[3].team).to.be('D');
+      expect(ageGroupList[3].team).to.be('U11D');
+      expect(ageGroupList[3].matchday).to.be('Sunday');
 
     });
 
@@ -1135,30 +1206,35 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(5);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U11B3');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U11C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
       expect(ageGroupList[3]).to.be.an('object');
-      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[3].league).to.be('U11B1');
       expect(ageGroupList[3].club).to.be('club1');
-      expect(ageGroupList[3].team).to.be('D');
+      expect(ageGroupList[3].team).to.be('U11D');
+      expect(ageGroupList[3].matchday).to.be('Sunday');
       expect(ageGroupList[4]).to.be.an('object');
-      expect(ageGroupList[4]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[4]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[4].league).to.be('U11B2');
       expect(ageGroupList[4].club).to.be('club1');
-      expect(ageGroupList[4].team).to.be('E');
+      expect(ageGroupList[4].team).to.be('U11E');
+      expect(ageGroupList[4].matchday).to.be('Sunday');
 
     });
 
@@ -1177,35 +1253,41 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(6);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U11B3');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U11C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
       expect(ageGroupList[3]).to.be.an('object');
-      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[3].league).to.be('U11B1');
       expect(ageGroupList[3].club).to.be('club1');
-      expect(ageGroupList[3].team).to.be('D');
+      expect(ageGroupList[3].team).to.be('U11D');
+      expect(ageGroupList[3].matchday).to.be('Sunday');
       expect(ageGroupList[4]).to.be.an('object');
-      expect(ageGroupList[4]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[4]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[4].league).to.be('U11B2');
       expect(ageGroupList[4].club).to.be('club1');
-      expect(ageGroupList[4].team).to.be('E');
+      expect(ageGroupList[4].team).to.be('U11E');
+      expect(ageGroupList[4].matchday).to.be('Sunday');
       expect(ageGroupList[5]).to.be.an('object');
-      expect(ageGroupList[5]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[5]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[5].league).to.be('U11B3');
       expect(ageGroupList[5].club).to.be('club1');
-      expect(ageGroupList[5].team).to.be('F');
+      expect(ageGroupList[5].team).to.be('U11F');
+      expect(ageGroupList[5].matchday).to.be('Sunday');
 
     });
 
@@ -1224,40 +1306,47 @@ describe('Retrieval of the team list for a league', function() {
       expect(ageGroupList).to.be.an('array');
       expect(ageGroupList).to.have.length(7);
       expect(ageGroupList[0]).to.be.an('object');
-      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[0]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[0].league).to.be('U11B1');
       expect(ageGroupList[0].club).to.be('club1');
-      expect(ageGroupList[0].team).to.be('A');
+      expect(ageGroupList[0].team).to.be('U11A');
+      expect(ageGroupList[0].matchday).to.be('Sunday');
       expect(ageGroupList[1]).to.be.an('object');
-      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[1]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[1].league).to.be('U11B2');
       expect(ageGroupList[1].club).to.be('club1');
-      expect(ageGroupList[1].team).to.be('B');
+      expect(ageGroupList[1].team).to.be('U11B');
+      expect(ageGroupList[1].matchday).to.be('Sunday');
       expect(ageGroupList[2]).to.be.an('object');
-      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[2]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[2].league).to.be('U11B3');
       expect(ageGroupList[2].club).to.be('club1');
-      expect(ageGroupList[2].team).to.be('C');
+      expect(ageGroupList[2].team).to.be('U11C');
+      expect(ageGroupList[2].matchday).to.be('Sunday');
       expect(ageGroupList[3]).to.be.an('object');
-      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[3]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[3].league).to.be('U11B1');
       expect(ageGroupList[3].club).to.be('club1');
-      expect(ageGroupList[3].team).to.be('D');
+      expect(ageGroupList[3].team).to.be('U11D');
+      expect(ageGroupList[3].matchday).to.be('Sunday');
       expect(ageGroupList[4]).to.be.an('object');
-      expect(ageGroupList[4]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[4]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[4].league).to.be('U11B2');
       expect(ageGroupList[4].club).to.be('club1');
-      expect(ageGroupList[4].team).to.be('E');
+      expect(ageGroupList[4].team).to.be('U11E');
+      expect(ageGroupList[4].matchday).to.be('Sunday');
       expect(ageGroupList[5]).to.be.an('object');
-      expect(ageGroupList[5]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[5]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[5].league).to.be('U11B3');
       expect(ageGroupList[5].club).to.be('club1');
-      expect(ageGroupList[5].team).to.be('F');
+      expect(ageGroupList[5].team).to.be('U11F');
+      expect(ageGroupList[5].matchday).to.be('Sunday');
       expect(ageGroupList[6]).to.be.an('object');
-      expect(ageGroupList[6]).to.only.have.keys('league', 'club', 'team');
+      expect(ageGroupList[6]).to.only.have.keys('league', 'club', 'team', 'matchday');
       expect(ageGroupList[6].league).to.be('U11B1');
       expect(ageGroupList[6].club).to.be('club1');
-      expect(ageGroupList[6].team).to.be('G');
+      expect(ageGroupList[6].team).to.be('U11G');
+      expect(ageGroupList[6].matchday).to.be('Sunday');
 
     });
 

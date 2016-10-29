@@ -125,10 +125,20 @@ function getAgeGroupList(club, ageGroup, ageGroupEntries) {
 
     for (var entryNumber = 0; entryNumber < ageGroupEntries.numberOfTeams; entryNumber++) {
       if (ageGroupEntries.numberOfTeams === 1) {
-        ageGroupList.push({league: ageGroup, club: club, team: ''});
+        ageGroupList.push({
+          league: ageGroup,
+          club: club,
+          team: ageGroup,
+          matchday: ageGroupEntries.usualMatchDay
+        });
       }
       else {
-        ageGroupList.push({league: ageGroup, club: club, team: designators.pop()});
+        ageGroupList.push({
+          league: ageGroup,
+          club: club,
+          team: ageGroup + designators.pop(),
+          matchday: ageGroupEntries.usualMatchDay
+        });
       }
     }
   }
@@ -150,10 +160,20 @@ function getAgeGroupList(club, ageGroup, ageGroupEntries) {
             break;
           case 1:
             if (division === 'B') {
-              ageGroupList.push({league: ageGroup + getTeamBDivision(club, ageGroup)[0], club: club, team: ''});
+              ageGroupList.push({
+                league: ageGroup + getTeamBDivision(club, ageGroup)[0],
+                club: club,
+                team: ageGroup,
+                matchday : entries.usualMatchDay
+              });
             }
             else {
-              ageGroupList.push({league: ageGroup + division, club: club, team: ''});
+              ageGroupList.push({
+                league: ageGroup + division,
+                club: club,
+                team: ageGroup,
+                matchday : entries.usualMatchDay
+              });
             }
             break;
           default:
@@ -162,10 +182,20 @@ function getAgeGroupList(club, ageGroup, ageGroupEntries) {
 
                 var divSelector = (entryNumber) % getTeamBDivision(club, ageGroup).length;
 
-                ageGroupList.push({league: ageGroup + getTeamBDivision(club, ageGroup)[divSelector], club: club, team: designators.pop()});
+                ageGroupList.push({
+                  league: ageGroup + getTeamBDivision(club, ageGroup)[divSelector],
+                  club: club,
+                  team: ageGroup + designators.pop(),
+                  matchday : entries.usualMatchDay
+                });
               }
               else {
-                ageGroupList.push({league: ageGroup + division, club: club, team: designators.pop()});
+                ageGroupList.push({
+                  league: ageGroup + division,
+                  club: club,
+                  team: ageGroup + designators.pop(),
+                  matchday : entries.usualMatchDay
+                });
               }
             }
         }
